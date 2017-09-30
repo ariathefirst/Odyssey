@@ -7,6 +7,45 @@
  * Large
  */
 /* Horizontal */
+.uk-card {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
+}
+/* Sections
+ ========================================================================== */
+.uk-card-body {
+  padding: 30px 30px;
+}
+.uk-grid-large {
+  margin-right: -40px;
+}
+.uk-grid-large > * {
+  padding-right: 40px;
+}
+/* Vertical */
+.uk-grid + .uk-grid-large,
+.uk-grid-large > .uk-grid-margin,
+* + .uk-grid-margin-large {
+  margin-top: 40px;
+}
+/* Desktop and bigger */
+@media (min-width: 1200px) {
+  /* Horizontal */
+  .uk-grid-large {
+    margin-right: -70px;
+  }
+  .uk-grid-large > * {
+    padding-right: 70px;
+  }
+  /* Vertical */
+  .uk-grid + .uk-grid-large,
+  .uk-grid-large > .uk-grid-margin,
+  * + .uk-grid-margin-large {
+    margin-top: 70px;
+  }
+}
 .uk-grid-divider.uk-grid-large {
   margin-right: -80px;
 }
