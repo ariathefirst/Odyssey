@@ -2,7 +2,29 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+<style>
+/*
+ * Large
+ */
+/* Horizontal */
+.uk-grid-divider.uk-grid-large {
+  margin-right: -80px;
+}
+.uk-grid-divider.uk-grid-large > * {
+  padding-right: 80px;
+}
+.uk-grid-divider.uk-grid-large > :not(.uk-first-column)::before {
+  right: 40px;
+}
+/* Vertical */
+.uk-grid-divider.uk-grid-large.uk-grid-stack > .uk-grid-margin {
+  margin-top: 80px;
+}
+.uk-grid-divider.uk-grid-large.uk-grid-stack > .uk-grid-margin::before {
+  top: -40px;
+  right: 80px;
+}
+</style>
 <div class="uk-grid-large uk-child-width-expand@s uk-text-center" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
