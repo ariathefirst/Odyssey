@@ -1,13 +1,9 @@
 body {
   background: url(./landing.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   /*background-position: center;*/
   font-family: 'Fugaz One', cursive;
 
-}
-
-img {
-  position: absolute;
 }
 
 html {
