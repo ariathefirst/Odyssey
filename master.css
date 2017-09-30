@@ -1,6 +1,10 @@
-body {
+#main {
   background: url(./landing.jpg);
   background-size: cover;
+}
+
+
+body {
   /*background-position: center;*/
   font-family: 'Fugaz One', cursive;
 
