@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./master.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href = "lightbox/lightbox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href = "dropdown.css" type="text/css" />
   <script type="text/javascript" src="lightbox/lightbox.js"></script>
 </head>
 <body>
@@ -20,7 +21,23 @@
         </div>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="checkedEvents.html">Plan Your Next Trip!</a></li>
+            <li>
+                <p class="dropbtn" onClick="dropFunction()">Plan Your Next Trip!</p>
+              <div class="dropdown-content" id="tripDropdown">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                  <option value="britain">Britain</option>
+                </select>
+                <input type="date" id="dateInput" value="2017-09-30">
+                <input type="date" id="dateInput" value="2017-09-30">
+                <form action="checkedEvents.html">
+                  <input type="submit" value="Go!">
+                </form>
+              </div>
+            </li>
             <li><a href="#">Log Out <i class="fa fa-sign-out" aria-hidden="true"></i>
 </a></li>
           </ul>
